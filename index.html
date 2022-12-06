@@ -23,7 +23,7 @@
     <style type="text/css" media="screen">
       body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
       body { font-family: sans-serif; color: grey; text-align: center; }
-      a { color: grey; text-decoration: none; font-size: 28px; }
+      a { color: grey; text-decoration: none; }
       h1 { margin-bottom: 8px; }
       .content {
         margin: 20px auto;
@@ -32,12 +32,37 @@
         margin: 10px;
         width: 30%;
       }
+      .proof-link {
+        text-decoration: underline;
+        line-height: 24px;;
+      }
+      .proof-content {
+        text-align: left;
+        max-width: 800px;
+        margin: 20px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+      }
+      .proof-link:hover {
+        color: #286cb4;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .about {
+        text-align: left;
+        max-width: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 20px auto;
+        font-size: 18px;
+        word-wrap: break-word;
+      }
       @media (max-width: 980px) and (orientation: portrait) {
         .content {
           margin: 20% auto 0;
           font-size: 200%;
         }
-        a { font-size: 150%; }
         .center {
           width: 80%;
         }
@@ -45,11 +70,55 @@
     </style>
   </head>
   <body>
+    <img src='/images/logo.png' alt='WideFix logo' style="object-fit: contain; padding-top: 10px" height="200" />
+    <br />
+    <br />
+    <h1>The best Ruby on Rails applications maintenance.</h1>
+    <h2>On the market since 2014.</h2>
+    <br />
+    <div class="proof-content">
+      <h3>Proof of the expertise:</h3>
+      <ul>
+        <li><a class="proof-link" href="https://blog.widefix.com" target="_blank">A tech blog</a></li>
+        <li><a class="proof-link" href="https://www.packtpub.com/product/rake-task-management-essentials/9781783280773" target="_blank">Book: Rake Task Management Essentials</a></li>
+        <li><a class="proof-link" href="https://github.com/ka8725/migration_data" target="_blank">OS: migration_data gem</a></li>
+        <li><a class="proof-link" href="https://github.com/widefix/actual_db_schema" target="_blank">OS: actual_db_schema gem</a></li>
+      </ul>
+    </div>
+    <div class="about">
+      <h3>About us:</h3>
+      <br />
+      <p>
+        We maintain and expand any applications written in Ruby: Ruby on Rails, Sinatra, Grape, Roda, Rack, pure Ruby, fully custom Ruby applications, etc.
+      </p>
+      <br />
+      <p>
+        We take care of the quality of the service we provide. It's guaranteed by exhaustive invernal code review and QA. This is the list of services we can do:
+      </p>
+      <ul>
+        <li>bugs fixing</li>
+        <li>application performance improving</li>
+        <li>memory leaks fixing</li>
+        <li>applying new design</li>
+        <li>improving application stability</li>
+        <li>implementing new features</li>
+        <li>integrating with other services</li>
+        <li>implementing API (REST API, GraphQL)</li>
+        <li>application configuration</li>
+        <li>deployment</li>
+        <li>code refactoring</li>
+        <li>increasing test coverage</li>
+        <li>payment gateways integration (Stripe, PayPal, Authorize.net, Braintree, proprietary payments gateways)</li>
+        <li>SMS/Automatic Phone calls integrations</li>
+        <li>Other third-party systems integrations (analytics, marketing campaigns, metrics collection, etc.)</li>
+      </ul>
+      <br />
+      <p>WideFix founder Andrei Kaleshka is a sole book author called "Rake Task Management Essentials".</p>
+    </div>
     <div class='content'>
-      <img class='center' src='/images/logo.png' alt='WideFix logo' />
+      <h4>What clients tell about our service:</h4>
       <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="12" data-height="375" data-nofollow="true" data-expandifr="true" data-scale="100" data-scale="100" data-reviews="2009400,1490888,1399992,1385286" data-clutchcompany-id="1340654"></div>
-      <h1>The best Ruby on Rails applications maintenance.</h1>
-      <a href='mailto:call@widefix.com'>call@widefix.com</a>
+      <a style="font-size: 34px" href='mailto:call@widefix.com'>call@widefix.com</a>
     </div>
   </body>
 </html>
